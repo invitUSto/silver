@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+    <!-- g.font -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Bungee+Inline&family=Bungee+Shade&family=Caveat&family=Fredericka+the+Great&family=Great+Vibes&family=Homemade+Apple&family=Kaushan+Script&family=Poppins:wght@300&family=Righteous&family=Yellowtail&display=swap');
+    </style>
+
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <title>silver</title>
+  </head>
+  <body>
+    <div id="load" style="display: none;"></div>
+    <!-- audio -->
+    <audio autoplay="true">
+      <source src="assets/audio.ogg" type="audio/mpeg">
+    </audio>
+    <script>
+      var settingAutoplay = "yes";
+      window.settingAutoplay = settingAutoplay === 'disable' ? false:true;
+    </script>
+    <nav class="navbar navbar-expand fixed-bottom">
+      <ul class="navbar-nav nav-justified">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-center">
+            <i class="ri-home-fill"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#mempelai" class="nav-link text-center">
+            <i class="ri-empathize-fill"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#akad" class="nav-link text-center">
+            <i class="ri-calendar-fill"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#place-box" class="nav-link text-center">
+            <i class="ri-road-map-fill"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#story" class="nav-link text-center">
+            <i class="ri-book-mark-fill"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#gift" class="nav-link text-center">
+            <i class="ri-gift-fill"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!-- hero -->
+    <section id="hero">
+      <div class="hero-container"  data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+        <img src="assets/img/head1.png" alt="img" class="orn1" />
+        <h5>We Are Getting Married</h5>
+        <h1>Fulan & Fulanah</h1>
+        <!-- cd time -->
+      <section id="cdtime" class="cdtime" data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="2500">
+        <div class="container">
+          <h5>- Save The Date -</h5>
+          <div id="time" class="time-section d-flex justify-content-center">
+            <div class="dd">
+              <span>Days</span>
+              <p id="days">00</p>
+            </div>
+            <div class="dd">
+              <span>Hours</span>
+              <p id="hours">00</p>
+            </div>
+            <div class="dd">
+              <span>Minutes</span>
+              <p id="minutes">00</p>
+            </div>
+            <div class="dd">
+              <span>Seconds</span>
+              <p id="seconds">00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- js cdtime -->
+      <script>
+        var countDownDate = new Date("december 24, 2023 07:00:00").getTime();
+        var x = setInterval(function () {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("days").innerHTML = days;
+          document.getElementById("hours").innerHTML = hours;
+          document.getElementById("minutes").innerHTML = minutes;
+          document.getElementById("seconds").innerHTML = seconds;
+
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("days").innerHTML = 00;
+            document.getElementById("hours").innerHTML = 00;
+            document.getElementById("minutes").innerHTML = 00;
+            document.getElementById("seconds").innerHTML = 00;
+          }
+        }, 1000);
+      </script>
+      <!-- end cdtime -->
+      <img src="assets/img/head2.png" alt="img" class="orn2"/>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+     
+      <!-- mempelai -->
+      <secton id="mempelai" class="mempelai">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Mempelai</h2>
+          <p class="arab">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
+          </p>
+          <p class="ayat">Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+
+          </p>
+        </div>
+        <div class="detail">
+          <img src="assets/img/foto3.png" alt="">
+          <div class="mempelai-info" data-aos="zoom-out-down">
+            <h3>Fulan</h3>
+            <p>putra dari</p>
+            <h4>bpk. abu fulan <br>
+              & <br>
+              ibu. ummu fulan</h4>
+            <p>ngawi</p>
+          </div>
+          <h2>&</h2>
+          <img src="assets/img/foto3.png" alt="">
+          <div class="mempelai-info" data-aos="zoom-out-down">
+            <h3>Fulanah</h3>
+            <p>putri dari</p>
+            <h4>bpk. abu fulanah <br>
+              & <br>
+              ibu. ummu fulanah</h4>
+            <p>ngawi</p>
+          </div>
+        </div>
+      </secton>
+      <!-- end mempelai -->
+      
+      <!-- akad -->
+      <section id="akad" class="akad section-bg">
+        <div class="container">
+            <div class="col">
+              <div class="section-title" data-aos="fade-up">
+                <h2>Detail Acara</i></h2>
+              </div>
+            </div>
+            <div class="date-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="tanggal">
+                <p>Tanggal</p>
+                <h4><a href="#none">10</a></h4>
+                <p>Bbbbb Tttt</p>
+              </div>
+            </div>
+            <div class="place-box" data-aos="zoom-in" data-aos-delay="100" id="place-box">
+              <div class="place">
+                <h4 class="lol">Lokasi</h4>
+                <p>Gandurejo, Sewurejo, Mojogedang, Karanganyar, Jawa Tengah</p>
+                <h4><a href="https://goo.gl/maps/kxXR4s7emDyRACPZ8">Buka Map</a></h4>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- end akad -->
+
+      <!-- story -->
+      <section id="story" class="testimonials">
+        <div class="container" data-aos="zoom-in">
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide" data-aos="fade-right" data-aos-delay="500" data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <div class="testimonial-item">
+                  <h3><i class="ri-heart-fill"></i> Kenalan</h3>
+                  <h4>00 Xxxxx 0000</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eveniet optio, expedita illum voluptates laborum deserunt. Nam soluta laudantium delectus, ducimus ab facilis aliquam officiis, iusto beatae tempora tenetur excepturi?
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide" data-aos="fade-left" data-aos-delay="600" data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <div class="testimonial-item">
+                  <h3><i class="ri-heart-fill"></i> Tunangan</h3>
+                  <h4>00 Xxxxx 0000</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eveniet optio, expedita illum voluptates laborum deserunt. Nam soluta laudantium delectus, ducimus ab facilis aliquam officiis, iusto beatae tempora tenetur excepturi?
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide" data-aos="fade-right" data-aos-delay="800" data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <div class="testimonial-item">
+                  <h3><i class="ri-heart-fill"></i> Lamaran</h3>
+                  <h4>00 Xxxxx 0000</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eveniet optio, expedita illum voluptates laborum deserunt. Nam soluta laudantium delectus, ducimus ab facilis aliquam officiis, iusto beatae tempora tenetur excepturi?
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide" data-aos="fade-left" data-aos-delay="500" data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <div class="testimonial-item">
+                  <h3><i class="ri-heart-fill"></i> Pernikahan</h3>
+                  <h4>00 Xxxxx 0000</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eveniet optio, expedita illum voluptates laborum deserunt. Nam soluta laudantium delectus, ducimus ab facilis aliquam officiis, iusto beatae tempora tenetur excepturi?
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+      </section>
+      <!-- end story -->
+
+      <!-- say -->
+      <section id="say" class="say">
+        <div class="container" data-aos="zoom-in">
+          <div class="section-title">
+            <h2>Do'a & Ucapan</h2>
+          </div>
+          <div class="row">
+            <div class="fulan">
+              <h3>- Fulanah -</h3>
+              <div class="row pesan-fulan" data-aos="zoom-out-up">
+                <button><a href="https://www.instagram.com/zever_s/">Kirim Ucapan Via Instagram</a></button>
+                <button><a href="https://wa.me/qr/5NXSUY7TJ754C1">Kirim Ucapan Via Whatsapp</a></button>
+              </div>
+            </div>
+            <div class="fulanah" data-aos="zoom-out-up">
+              <h3>- Fulan -</h3>
+              <div class="row pesan-fulan">
+                <button><a href="https://www.instagram.com/zever_s/">Kirim Ucapan Via Instagram</a></button>
+                <button><a href="https://wa.me/qr/5NXSUY7TJ754C1">Kirim Ucapan Via Whatsapp</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end gift -->
+
+      <!-- gift -->
+      <section id="gift" class="gift">
+        <div class="container" data-aos="zoom-in">
+          <div class="section-title">
+            <h2>Gift</h2>
+          </div>
+          <div class="modal-content">
+            <h4>BRI</h4>
+            <input type="text" value="nomer rekening" id="myInput">
+            <button onclick="myFunction()">Salin</button>
+            
+          </div>
+        </div>
+      </section>
+      <!-- end gift -->
+
+      
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://www.instagram.com/zever_s/" class="instagram"><i class="ri-instagram-fill"></i></a>
+          <a href="https://wa.me/qr/5NXSUY7TJ754C1"><i class="ri-whatsapp-fill"></i></a>
+        </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>invitUS</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var loader = document.getElementById("load");
+
+      window.addEventListener("load", function(){
+        loader.style.display = "none";
+      })
+    </script>
+    
+      <script>
+        function myFunction() {
+          var copyText = document.getElementById("myInput");
+        
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+        
+          navigator.clipboard.writeText(copyText.value);
+          
+          alert("Copied the text: " + copyText.value);
+        }
+        </script>
+  </body>
+</html>
